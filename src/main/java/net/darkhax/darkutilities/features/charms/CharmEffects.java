@@ -14,22 +14,19 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
+import org.jspecify.annotations.NullMarked;
 
+@NullMarked
 public class CharmEffects {
-
     public static void wardingCharmTick(ItemStack stack, Level world, Entity user, boolean selected) {
-
         if (user instanceof LivingEntity living && !living.getActiveEffects().isEmpty()) {
-
             final CompoundTag effectTag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getCompound("effect").orElse(null);
             final float chance = effectTag != null && effectTag.contains("chance")
                                  ? effectTag.getFloat("chance").orElseThrow()
                                  : 1f;
 
             for (MobEffectInstance effect : living.getActiveEffects()) {
-
                 if (!effect.isAmbient() && effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL && !effect.getEffect().value().isInstantenous() && Math.random() < chance && effect instanceof AccessorMobEffectInstance accessor) {
-
                     accessor.darkUtilities$tickDownDuration();
                 }
             }

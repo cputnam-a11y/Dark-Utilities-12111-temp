@@ -48,7 +48,7 @@ public final class ExperienceHelper {
         // Start by calculating how many EXP points the player's current level is worth.
         int exp = getTotalPointsForLevel(player.experienceLevel);
         // Add the amount of experience points the player has earned towards their next level.
-        exp += player.experienceProgress * getTotalPointsForLevel(player.experienceLevel + 1);
+        exp += (int) player.experienceProgress * getTotalPointsForLevel(player.experienceLevel + 1);
         return exp;
     }
 

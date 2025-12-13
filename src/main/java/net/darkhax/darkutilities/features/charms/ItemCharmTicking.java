@@ -5,14 +5,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
+@NullMarked
 public class ItemCharmTicking extends ItemCharm {
-
     private final ITickEffect effect;
 
     public ItemCharmTicking(Properties properties, ITickEffect effect) {
-
         super(properties);
         this.effect = effect;
     }
@@ -25,7 +25,6 @@ public class ItemCharmTicking extends ItemCharm {
 
     @FunctionalInterface
     public interface ITickEffect {
-
         void apply(ItemStack stack, Level world, Entity user, boolean selected);
     }
 }

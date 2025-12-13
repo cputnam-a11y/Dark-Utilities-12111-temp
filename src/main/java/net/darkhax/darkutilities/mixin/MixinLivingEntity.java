@@ -35,6 +35,7 @@ public abstract class MixinLivingEntity extends Entity {
         }
     }
 
+    @SuppressWarnings("DataFlowIssue") // mixin ctor
     private MixinLivingEntity() {
         super(null, null);
     }

@@ -1,6 +1,5 @@
 package net.darkhax.darkutilities;
 
-import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -30,7 +29,6 @@ public class DarkUtils {
     }
 
     public static DarkUtils getInstance() {
-
         if (instance == null) {
             instance = new DarkUtils();
         }

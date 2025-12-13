@@ -24,6 +24,7 @@ import java.util.function.Consumer;
 
 import static net.darkhax.darkutilities.Constants.id;
 
+@SuppressWarnings("deprecation")
 public class FlatTileEffects {
 
     public static final ResourceKey<@NotNull DamageType> FAKE_PLAYER_DAMAGE = ResourceKey.create(Registries.DAMAGE_TYPE, id("fake_player"));
