@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plate_base": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#darkutils:plate_base"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_slime_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:slime_balls"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "darkutils:anchor_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_slime_ball",
+      "has_plate_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "darkutils:anchor_plate"
+    ]
+  }
+}

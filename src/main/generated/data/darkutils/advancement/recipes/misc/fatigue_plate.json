@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plate_base": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#darkutils:plate_base"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_prismarine_crystals": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:prismarine_crystals"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_prismarine_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:prismarine_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "darkutils:fatigue_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_prismarine_crystals",
+      "has_prismarine_shard",
+      "has_plate_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "darkutils:fatigue_plate"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:vector_plate",
+  "key": {
+    "B": "darkutils:vector_plate_fast",
+    "D": "minecraft:sugar",
+    "S": "minecraft:redstone"
+  },
+  "pattern": [
+    "BBB",
+    "SDS",
+    "BBB"
+  ],
+  "result": {
+    "count": 6,
+    "id": "darkutils:vector_plate_extreme"
+  }
+}

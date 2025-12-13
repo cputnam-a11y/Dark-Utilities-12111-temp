@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:plate",
+  "key": {
+    "B": "minecraft:wither_rose",
+    "F": "minecraft:flint",
+    "S": "#darkutils:plate_base"
+  },
+  "pattern": [
+    "FBF",
+    "SSS"
+  ],
+  "result": {
+    "count": 3,
+    "id": "darkutils:wither_plate"
+  }
+}

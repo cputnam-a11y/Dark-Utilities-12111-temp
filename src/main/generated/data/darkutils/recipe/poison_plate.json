@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:plate",
+  "key": {
+    "B": "minecraft:poisonous_potato",
+    "F": "minecraft:spider_eye",
+    "S": "#darkutils:plate_base"
+  },
+  "pattern": [
+    "BFB",
+    "SSS"
+  ],
+  "result": {
+    "count": 3,
+    "id": "darkutils:poison_plate"
+  }
+}

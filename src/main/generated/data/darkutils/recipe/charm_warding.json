@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "N": "minecraft:nether_star",
+    "S": "#c:strings",
+    "T": "minecraft:totem_of_undying"
+  },
+  "pattern": [
+    "SSS",
+    "GNG",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "darkutils:charm_warding"
+  }
+}

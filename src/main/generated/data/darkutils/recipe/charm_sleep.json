@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:black_wool",
+    "E": "#minecraft:beds",
+    "R": "minecraft:red_wool",
+    "S": "minecraft:gold_ingot",
+    "W": "minecraft:white_wool",
+    "Y": "minecraft:yellow_wool"
+  },
+  "pattern": [
+    "SWS",
+    "BEY",
+    "SRS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "darkutils:charm_sleep"
+  }
+}

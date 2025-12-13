@@ -21,3 +21,5 @@ build
 eclipse
 run
 runs
+src/main/generated/.cache
+src/main/generated/.cache/**

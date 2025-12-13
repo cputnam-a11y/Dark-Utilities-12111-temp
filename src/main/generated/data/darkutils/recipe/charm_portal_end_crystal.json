@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:portal_charm",
+  "key": {
+    "C": "minecraft:end_crystal",
+    "O": "minecraft:crying_obsidian",
+    "S": "#c:strings"
+  },
+  "pattern": [
+    "SSS",
+    "OCO",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "darkutils:charm_portal"
+  }
+}

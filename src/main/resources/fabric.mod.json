@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_source}",
+    "issues": "${mod_issues}"
+  },
+  "icon": "assets/${mod_id}/textures/block/vector_plate.png",
+  "license": "${mod_license}",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.darkhax.darkutilities.DarkUtilsEntry"
+    ],
+    "fabric-datagen": [
+      "net.darkhax.darkutilities.datagen.DarkUtilsDatagen"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=17"
+  }
+}

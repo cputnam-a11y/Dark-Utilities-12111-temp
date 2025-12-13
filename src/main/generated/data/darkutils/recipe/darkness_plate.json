@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:plate",
+  "key": {
+    "B": "minecraft:ink_sac",
+    "F": "minecraft:phantom_membrane",
+    "S": "#darkutils:plate_base"
+  },
+  "pattern": [
+    "BFB",
+    "SSS"
+  ],
+  "result": {
+    "count": 3,
+    "id": "darkutils:darkness_plate"
+  }
+}

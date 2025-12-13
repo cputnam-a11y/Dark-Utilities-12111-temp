@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/bone",
+      "sprite": "darkutils:bone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/wheat",
+      "sprite": "darkutils:wheat"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/spider_eye",
+      "sprite": "darkutils:spider_eye"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/egg",
+      "sprite": "darkutils:egg"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/blaze_powder",
+      "sprite": "darkutils:blaze_powder"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/snowball",
+      "sprite": "darkutils:snowball"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/slime_ball",
+      "sprite": "darkutils:slime_ball"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/rotten_flesh",
+      "sprite": "darkutils:rotten_flesh"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/emerald",
+      "sprite": "darkutils:emerald"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/water_bucket",
+      "sprite": "darkutils:water_bucket"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/bell",
+      "sprite": "darkutils:bell"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/milk_bucket",
+      "sprite": "darkutils:milk_bucket"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/minecart",
+      "sprite": "darkutils:minecart"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/name_tag",
+      "sprite": "darkutils:name_tag"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:item/golden_chestplate",
+      "sprite": "darkutils:golden_chestplate"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:filters",
+  "key": {
+    "F": "#minecraft:fence_gates",
+    "I": "minecraft:egg",
+    "S": "#c:stones"
+  },
+  "pattern": [
+    "SFS",
+    "FIF",
+    "SFS"
+  ],
+  "result": {
+    "count": 4,
+    "id": "darkutils:filter_child"
+  }
+}

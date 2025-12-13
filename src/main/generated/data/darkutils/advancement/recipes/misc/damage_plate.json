@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crimson_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_golden_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_plate_base": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#darkutils:plate_base"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "darkutils:damage_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_fungus",
+      "has_golden_sword",
+      "has_plate_base"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "darkutils:damage_plate"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "#darkutils:dark_stones",
+    "E": "minecraft:ender_pearl",
+    "Q": "minecraft:quartz",
+    "R": "minecraft:redstone"
+  },
+  "pattern": [
+    "CCC",
+    "QER",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "darkutils:redstone_randomizer"
+  }
+}

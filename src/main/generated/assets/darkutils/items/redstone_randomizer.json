@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "darkutils:block/redstone_randomizer_enabled"
+  }
+}

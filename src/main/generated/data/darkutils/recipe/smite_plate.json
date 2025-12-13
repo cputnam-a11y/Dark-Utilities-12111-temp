@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "darkutils:plate",
+  "key": {
+    "B": "minecraft:iron_sword",
+    "F": "minecraft:ghast_tear",
+    "S": "#darkutils:plate_base"
+  },
+  "pattern": [
+    "FBF",
+    "SSS"
+  ],
+  "result": {
+    "count": 3,
+    "id": "darkutils:smite_plate"
+  }
+}
