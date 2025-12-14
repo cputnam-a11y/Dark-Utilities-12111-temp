@@ -14,4 +14,3 @@ plugins {
 }
 
 rootProject.name = "DarkUtilities"
-include("common")

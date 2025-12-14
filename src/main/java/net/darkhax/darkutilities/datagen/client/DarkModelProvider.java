@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.renderer.item.BlockModelWrapper;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.BlockItem;
@@ -51,7 +53,10 @@ public class DarkModelProvider extends FabricModelProvider {
                         )
                 );
             } else {
-                itemModelGenerator.itemModelOutput.accept(item, new BlockModelWrapper.Unbaked(ModelLocationUtils.getModelLocation(item), List.of()));
+                itemModelGenerator.itemModelOutput.accept(item, new BlockModelWrapper.Unbaked(
+                        ModelTemplates.FLAT_HANDHELD_ITEM.create(item, TextureMapping.layer0(item), itemModelGenerator.modelOutput),
+                        List.of()
+                ));
             }
 
         }
