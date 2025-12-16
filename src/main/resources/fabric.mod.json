@@ -21,6 +21,9 @@
     ],
     "fabric-datagen": [
       "net.darkhax.darkutilities.datagen.DarkUtilsDatagen"
+    ],
+    "client": [
+      "net.darkhax.darkutilities.DarkUtilsClientEntry"
     ]
   },
   "mixins": [
