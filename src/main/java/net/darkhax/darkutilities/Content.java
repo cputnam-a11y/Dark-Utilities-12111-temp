@@ -9,6 +9,7 @@ import net.darkhax.darkutilities.features.flatblocks.BlockFlatTile;
 import net.darkhax.darkutilities.features.flatblocks.BlockFlatTileRotatable;
 import net.darkhax.darkutilities.features.flatblocks.BlockFlatTileRotatableLightningUpgrade;
 import net.darkhax.darkutilities.features.flatblocks.FlatTileEffects;
+import net.darkhax.darkutilities.features.grates.BlockItemGrate;
 import net.darkhax.darkutilities.features.redstone.BlockRedstoneRandomizer;
 import net.darkhax.darkutilities.features.redstone.BlockShieldedRedstone;
 import net.darkhax.darkutilities.features.tomes.ItemTome;
@@ -26,6 +27,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.npc.villager.VillagerTrades;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import org.jspecify.annotations.Nullable;
@@ -39,7 +41,6 @@ import java.util.function.Predicate;
 import static net.darkhax.darkutilities.Constants.id;
 
 public class Content {
-
     protected final Map<Item, Component> tooltipCache = new HashMap<>();
     public final ArrayList<Item> items = new ArrayList<>();
     public final CreativeModeTab tab = Registry.register(
@@ -78,6 +79,7 @@ public class Content {
     public final Block smitePlate = this.createFlatBlock(FlatTileEffects.SMITE, "smite_plate");
     public final Block banePlate = this.createFlatBlock(FlatTileEffects.BANE, "bane_plate");
     public final Block anchorPlate = this.createFlatBlockRotatable(FlatTileEffects.ANCHOR, "anchor_plate");
+
     public final Block filterPlayer = this.createFilter(Filters.PLAYER, "filter_player");
     public final Block filterUndead = this.createFilter(Filters.UNDEAD, "filter_undead");
     public final Block filterArthropod = this.createFilter(Filters.ARTHROPOD, "filter_arthropod");
@@ -96,8 +98,19 @@ public class Content {
     public final Block filterFreezeImmune = this.createFilter(Filters.FREEZE_IMMUNE, "filter_freeze_immune");
     public final Block filterEquipment = this.createFilter(Filters.EQUIPMENT, "filter_equipment");
     public final Block filterPassenger = this.createFilter(Filters.PASSENGER, "filter_passenger");
+
     public final Block redstoneRandomizer = this.registerBlock(BlockRedstoneRandomizer::new, BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).strength(3.5f).randomTicks(), "redstone_randomizer");
     public final Block shieldedRedstone = this.registerBlock(BlockShieldedRedstone::new, BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).strength(3.5f), "shielded_redstone");
+
+    public final Block itemGrate = this.registerBlock(
+            BlockItemGrate::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .isValidSpawn(Blocks::always)
+                    .isSuffocating(Blocks::never)
+                    .isRedstoneConductor(Blocks::never)
+                    .noOcclusion(),
+            "item_grate"
+    );
 
     public final Item portalCharm = this.registerItem(ItemCharm::new, ItemCharm.PROPERTIES.get(), "charm_portal");
     public final Item sleepCharm = this.registerItem(properties -> new ItemCharmTicking(properties, CharmEffects::sleepCharmTick), ItemCharm.PROPERTIES.get(), "charm_sleep");
